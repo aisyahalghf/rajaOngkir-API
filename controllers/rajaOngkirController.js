@@ -3,7 +3,7 @@ const axios = require("axios");
 module.exports = {
   getProvince: async (req, res) => {
     try {
-      let key = process.env.BASE_URL;
+      let key = "3948c0097300059884a7a864fb2d436a";
       let response = await axios.get(
         "https://api.rajaongkir.com/starter/province",
         {
@@ -36,7 +36,7 @@ module.exports = {
   getCity: async (req, res) => {
     try {
       let { province_id } = req.query;
-      let key = process.env.BASE_URL;
+      let key = "3948c0097300059884a7a864fb2d436a";
 
       if (!province_id)
         return res.status(404).send({
@@ -77,7 +77,7 @@ module.exports = {
   getShippingCost: async (req, res) => {
     try {
       let { origin, destination, weight, courier } = req.body;
-      let key = process.env.BASE_URL;
+      let key = "3948c0097300059884a7a864fb2d436a";
 
       if (!origin || !destination || !weight || !courier)
         return res.status(404).send({
