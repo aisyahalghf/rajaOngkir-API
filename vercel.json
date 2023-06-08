@@ -12,12 +12,9 @@
             "dest": "/"
         }
     ],
-    "rewrites": [
-        {
-          "source": "/(.*)",
-          "destination": "/index.js"
-        }
-      ]
+ "rewrites": [{ "source": "/rajaongkir/(.*)", "destination": "/rajaongkir" }]
+     
+
     
     
 }
