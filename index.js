@@ -26,11 +26,7 @@ app.get("/", (req, res) => {
 });
 
 // Import Router
-const {
-  rajaOngkirRouter,
-  busSeatRouter,
-  formationsRouter,
-} = require("./routers");
-app.use("/rajaongkir", rajaOngkirRouter);
+const { rajaOngkirRouter } = require("./routers");
+app.use("/", rajaOngkirRouter);
 
 app.listen(PORT, () => console.log(`API Running on Port ${PORT}`));
